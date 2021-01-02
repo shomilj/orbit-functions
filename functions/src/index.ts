@@ -1,8 +1,15 @@
 import * as functions from "firebase-functions";
+import * as Features from "./features";
 
 // Start writing Firebase Functions
 // https://firebase.google.com/docs/functions/typescript
 
-export const getParams = functions.https.onRequest((request, response) => {
-  response.send("Hello from Firebase!");
+export const writeAll = functions.https.onRequest((request, response) => {
+  Features.writeAll()
+    .then(() => {
+      response.json({ success: true });
+    })
+    .catch((error) => {
+      response.json({ error: error });
+    });
 });

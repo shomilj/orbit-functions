@@ -1,6 +1,6 @@
 // import * as Countdown from "../src/features/countdown";
 // import * as CampusMap from "../src/features/campusmap";
-import * as CityCovid from "../src/features/citycovid";
+import * as CityCovid from "../lib/features/citycovid";
 
 describe("", () => {
   // the tests container
