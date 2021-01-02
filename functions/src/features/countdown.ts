@@ -46,8 +46,14 @@ export const writeCell = async (
   const daysLeft =
     moment().diff(moment(DATE_MAP[params.event]), "days") + " Days";
 
-  const cell = new CellModel(header, CellType.Markdown, [
-    Label(daysLeft, FontStyle.h2),
-  ]);
+  // Expires at end of day today.
+  const expires = moment().endOf("day").unix();
+
+  const cell = new CellModel(
+    header,
+    CellType.Markdown,
+    [Label(daysLeft, FontStyle.h2)],
+    expires
+  );
   pushCell(cell);
 };

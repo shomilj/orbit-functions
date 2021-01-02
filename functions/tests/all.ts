@@ -1,22 +1,32 @@
 import * as Countdown from "../src/features/countdown";
+import * as CampusMap from "../src/features/campusmap";
 
-describe("Countdown Tests", () => {
+describe("all", () => {
   // the tests container
-  it("Main Test", () => {
-    Countdown.writeCard((card: any) => {
-      console.log("Write Card: ", JSON.parse(JSON.stringify(card)));
-    }).then(() => {});
 
+  const writeCard = (card: any) => {
+    console.log("Write Card:", card);
+  };
+
+  const writeCell = (cell: any) => {
+    console.log("Write Cell:", cell);
+  };
+
+  const writeDetail = (detail: any) => {
+    console.log("Write Detail:", detail);
+  };
+
+  it("countdown", () => {
+    Countdown.writeCard(writeCard).then(() => {});
     Countdown.writeCell(
       { event: "Dead Week" },
-      (cell: any) => {
-        console.log("Write Cell: ", JSON.parse(JSON.stringify(cell)));
-      },
-      (detail: any) => {
-        if (detail) {
-          console.log("Write Detail: ", JSON.parse(JSON.stringify(detail)));
-        }
-      }
+      writeCell,
+      writeDetail
     ).then(() => {});
+  });
+
+  it("campusmap", () => {
+    CampusMap.writeCard(writeCard).then(() => {});
+    CampusMap.writeCell(null, writeCell, writeDetail).then(() => {});
   });
 });
