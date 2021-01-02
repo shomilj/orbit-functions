@@ -8,6 +8,6 @@ export const writeCard = async (card: CardModel, id: string) => {
     .firestore()
     .collection("cards")
     .doc(id)
-    .set(card);
+    .set(JSON.parse(JSON.stringify(card)));
   console.log("Write Result:", writeResult);
 };

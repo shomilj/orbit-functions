@@ -4,20 +4,13 @@ import { Label, FontStyle } from "../models/cards/markdown";
 import { CardGroup, CardModel } from "../models/card";
 import { MapPage } from "../models/detail/map";
 
-export const getParams = async () => {
-  // Return all parameter options for this card.
-  return [];
-};
-
 export const writeCard = async (pushCard: any) => {
   // Write the card structure for this card to Firestore.
-  const params = await getParams();
   const card = new CardModel(
     "Campus Map",
     "View the UC Berkeley Campus Map.",
     "map",
-    [CardGroup.AllCards],
-    params
+    [CardGroup.AllCards]
   );
   pushCard(card);
 };
