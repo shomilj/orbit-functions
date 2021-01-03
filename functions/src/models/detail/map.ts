@@ -7,8 +7,14 @@ interface MapLocation {
   color: String;
 }
 
-export const MapDetail = (locations: MapLocation[]) => {
+interface MapDetailType {
+  type: string;
+  locations: MapLocation[];
+}
+
+export const MapDetail = (locations: MapLocation[]): MapDetailType => {
   return {
+    type: "MAP",
     locations: locations,
   };
 };
