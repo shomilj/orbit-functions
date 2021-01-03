@@ -1,18 +1,22 @@
 // This card displays a countdown to an event of the user's choosing.
 
-import { CellModel, CellType } from "../models/cell";
-import { Label, FontStyle } from "../models/cards/markdown";
-import { CardGroup, CardModel } from "../models/card";
+import { ActionType, CellModel } from "../models/cell";
+import { TextRow, FontStyle } from "../models/rows/text";
+import { CardCategory, CardModel } from "../models/card";
 import * as moment from "moment";
 import axios from "axios";
+import { ButtonRow } from "../models/rows/button";
+
+const CARD_KEY = "city-covid";
 
 export const writeCard = async (pushCard: any) => {
   // Write the card structure for this card to Firestore.
   const card = new CardModel(
+    CARD_KEY,
     "City of Berkeley COVID-19 Data",
     "This card displays information from the City of Berkeley COVID-19 dashboard.",
     "medkit",
-    [CardGroup.AllCards]
+    CardCategory.HealthFitness
   );
   pushCard(card);
 };
@@ -30,19 +34,33 @@ export const writeCell = async (
   );
   const data = result.data;
   const recent = data[data.length - 1];
-  const reportedDate = "Last Updated: " + moment(recent.date).format('MM/DD/YYYY');
-  const newCases = recent.bklhj_newcases + " New Cases";
-  const totalCases = recent.bklhj_cumulcases + " Total Cases";
+  const reportedDate =
+    "Last Updated: " + moment(recent.date).format("MM/DD/YYYY");
+  // const newCases = recent.bklhj_newcases + " New Cases";
+  const totalCases = recent.bklhj_cumulcases;
   const header = "City of Berkeley COVID-19 Data";
   const expires = moment().add(30, "minutes").unix();
 
   const cell = new CellModel(
+    CARD_KEY,
+    params,
     header,
-    CellType.Markdown,
     [
-      Label(newCases, FontStyle.h2),
-      Label(totalCases, FontStyle.h2),
-      Label(reportedDate, FontStyle.footer),
+      TextRow(
+        "There are " + totalCases + " positive cases in the City of Berkeley.",
+        FontStyle.h2
+      ),
+      TextRow(reportedDate, FontStyle.footer),
+      ButtonRow(
+        "Book a COVID Test",
+        ActionType.Web,
+        "https://etang.berkeley.edu/"
+      ),
+      ButtonRow(
+        "COVID-19 Cases on Campus",
+        ActionType.Web,
+        "https://covid.berkeley.edu/"
+      ),
     ],
     expires
   );

@@ -1,3 +1,5 @@
+import { RowType } from "../cell";
+
 export enum FontStyle {
   h1 = "h1",
   h2 = "h2",
@@ -11,6 +13,6 @@ export enum FontStyle {
   title = "title",
 }
 
-export const Label = (content: string, style: FontStyle) => {
-  return { content: content, style: style };
+export const TextRow = (content: string, style: FontStyle) => {
+  return { type: RowType.Text, data: { content: content, style: style } };
 };

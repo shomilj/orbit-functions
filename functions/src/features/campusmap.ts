@@ -1,16 +1,19 @@
 // This card displays a countdown to an event of the user's choosing.
-import { CellModel, CellType, ActionType } from "../models/cell";
-import { Label, FontStyle } from "../models/cards/markdown";
-import { CardGroup, CardModel } from "../models/card";
+import { CellModel, ActionType } from "../models/cell";
+import { TextRow, FontStyle } from "../models/rows/text";
+import { CardCategory, CardModel } from "../models/card";
 import { MapPage } from "../models/detail/map";
+
+const CARD_KEY = "campus-map";
 
 export const writeCard = async (pushCard: any) => {
   // Write the card structure for this card to Firestore.
   const card = new CardModel(
+    CARD_KEY,
     "Campus Map",
     "View the UC Berkeley Campus Map.",
     "map",
-    [CardGroup.AllCards]
+    CardCategory.Navigation
   );
   pushCard(card);
 };
@@ -22,11 +25,10 @@ export const writeCell = async (
 ) => {
   // Write the cell structure for this cell to Firestore.
   const header = "UC Berkeley Campus Map";
-  const cellType = CellType.Markdown;
-  const cellData = [Label("Tap Here to View the Campus Map", FontStyle.h3)];
+  const cellData = [TextRow("Tap Here to View the Campus Map", FontStyle.h3)];
   const expires = -1;
-  const actionType = ActionType.Expand;
-  const cell = new CellModel(header, cellType, cellData, expires, actionType);
+  const actionType = ActionType.Detail;
+  const cell = new CellModel(CARD_KEY, params, header, cellData, expires, actionType);
   pushCell(cell);
 
   // Then, write the child node if the cell contains a child.

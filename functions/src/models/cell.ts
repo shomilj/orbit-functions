@@ -1,30 +1,35 @@
-export enum CellType {
-  Markdown = "MARKDOWN",
+export enum ActionType {
+  Web = "WEB",
+  Detail = "DETAIL",
 }
 
-export enum ActionType {
-  Expand = "EXPAND",
+export enum RowType {
+  Text = "TEXT",
+  Button = "BUTTON",
 }
 
 export class CellModel {
+  cardKey: string;
   actionType?: string;
   actionData?: string;
   header: string;
-  cellType: string;
-  cellData: any;
+  params: string;
+  data: any[];
   expires: number;
 
   constructor(
+    cardKey: string,
+    params: any,
     header: string,
-    cellType: CellType,
-    cellData: any,
+    data: any[],
     expires: number,
     actionType?: string,
     actionData?: string
   ) {
+    this.cardKey = cardKey;
+    this.params = params;
     this.header = header;
-    this.cellType = cellType;
-    this.cellData = cellData;
+    this.data = data;
     this.expires = expires;
     this.actionType = actionType;
     this.actionData = actionData;

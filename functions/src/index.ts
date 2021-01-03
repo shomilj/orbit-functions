@@ -13,3 +13,13 @@ export const writeAll = functions.https.onRequest((request, response) => {
       response.json({ error: error });
     });
 });
+
+export const testWriteCells = functions.https.onRequest((request, response) => {
+  Features.testWriteCells()
+    .then(() => {
+      response.json({ success: true });
+    })
+    .catch((error) => {
+      response.json({ error: error });
+    });
+});
