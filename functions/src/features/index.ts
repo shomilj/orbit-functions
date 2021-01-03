@@ -19,4 +19,10 @@ export const testWriteCells = async () => {
     .catch((error) => {
       console.log(error);
     });
+
+  await CampusMap.writeCell(null, Firestore.writeCell, Firestore.writeDetail)
+    .then(() => {})
+    .catch((error) => {
+      console.log(error);
+    });
 };

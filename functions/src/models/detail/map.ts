@@ -7,7 +7,7 @@ interface MapLocation {
   color: String;
 }
 
-export const MapPage = (locations: MapLocation[]) => {
+export const MapDetail = (locations: MapLocation[]) => {
   return {
     locations: locations,
   };

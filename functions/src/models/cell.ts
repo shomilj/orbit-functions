@@ -1,3 +1,5 @@
+import * as hash from "object-hash";
+
 export enum ActionType {
   Web = "WEB",
   Detail = "DETAIL",
@@ -34,4 +36,11 @@ export class CellModel {
     this.actionType = actionType;
     this.actionData = actionData;
   }
+
+  documentId = (): string => {
+    return hash({
+      cardId: this.cardKey,
+      params: this.params,
+    });
+  };
 }

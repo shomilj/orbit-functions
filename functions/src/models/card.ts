@@ -1,4 +1,5 @@
 import { Param } from "./parameter";
+import * as hash from "object-hash";
 
 export enum CardCategory {
   HealthFitness = "Health & Fitness",
@@ -32,4 +33,10 @@ export class CardModel {
     this.category = category;
     this.params = params;
   }
+
+  documentId = (): string => {
+    return hash({
+      key: this.key,
+    });
+  };
 }

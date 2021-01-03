@@ -2,7 +2,8 @@
 import { CellModel, ActionType } from "../models/cell";
 import { TextRow, FontStyle } from "../models/rows/text";
 import { CardCategory, CardModel } from "../models/card";
-import { MapPage } from "../models/detail/map";
+import { MapDetail } from "../models/detail/map";
+import { DetailModel } from "../models/detail";
 
 const CARD_KEY = "campus-map";
 
@@ -28,10 +29,17 @@ export const writeCell = async (
   const cellData = [TextRow("Tap Here to View the Campus Map", FontStyle.h3)];
   const expires = -1;
   const actionType = ActionType.Detail;
-  const cell = new CellModel(CARD_KEY, params, header, cellData, expires, actionType);
+  const cell = new CellModel(
+    CARD_KEY,
+    params,
+    header,
+    cellData,
+    expires,
+    actionType
+  );
   pushCell(cell);
 
   // Then, write the child node if the cell contains a child.
   const mapData = require("../assets/campusmap.json");
-  pushDetail(MapPage(mapData));
+  pushDetail(new DetailModel(CARD_KEY, params, "map", MapDetail(mapData)));
 };
