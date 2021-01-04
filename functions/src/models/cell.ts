@@ -13,7 +13,7 @@ export enum RowType {
 export class CellModel {
   cardKey: string;
   actionType?: string;
-  actionData?: string;
+  actionContent?: string;
   header: string;
   params: string;
   data: any[];
@@ -26,7 +26,7 @@ export class CellModel {
     data: any[],
     expires: number,
     actionType?: string,
-    actionData?: string
+    actionContent?: string
   ) {
     this.cardKey = cardKey;
     this.params = params;
@@ -34,7 +34,7 @@ export class CellModel {
     this.data = data;
     this.expires = expires;
     this.actionType = actionType;
-    this.actionData = actionData;
+    this.actionContent = actionContent;
   }
 
   documentId = (): string => {

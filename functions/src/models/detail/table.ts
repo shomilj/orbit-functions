@@ -1,17 +1,17 @@
 interface TableRow {
   actionType?: string;
-  actionData?: string;
-  rows: any[];
+  actionContent?: string;
+  data: any[];
 }
 
 interface TableDetailType {
   type: string;
-  rows: TableRow[];
+  data: TableRow[];
 }
 
 export const TableDetail = (rows: TableRow[]): TableDetailType => {
   return {
     type: "TABLE",
-    rows: rows,
+    data: rows,
   };
 };

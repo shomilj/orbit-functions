@@ -1,0 +1,110 @@
+[
+  {
+    "team": "Baseball",
+    "calendar": "https://www.stanza.co/api/schedules/berkeley/BSB.ics"
+  },
+  {
+    "team": "Men's Basketball",
+    "calendar": "https://www.stanza.co/api/schedules/berkeley/MBK.ics"
+  },
+  {
+    "team": "Women's Basketball",
+    "calendar": "https://www.stanza.co/api/schedules/berkeley/WBK.ics"
+  },
+  {
+    "team": "Beach Volleyball",
+    "calendar": "https://www.stanza.co/api/schedules/berkeley/BVB.ics"
+  },
+  {
+    "team": "Cross Country",
+    "calendar": "https://www.stanza.co/api/schedules/berkeley/CXC.ics"
+  },
+  {
+    "team": "Field Hockey",
+    "calendar": "https://www.stanza.co/api/schedules/berkeley/FH.ics"
+  },
+  {
+    "team": "Football",
+    "calendar": "https://www.stanza.co/api/schedules/berkeley/CFB.ics"
+  },
+  {
+    "team": "Men's Golf",
+    "calendar": "https://www.stanza.co/api/schedules/berkeley/MGLF.ics"
+  },
+  {
+    "team": "Women's Golf",
+    "calendar": "https://www.stanza.co/api/schedules/berkeley/WGLF.ics"
+  },
+  {
+    "team": "Men's Gymnastics",
+    "calendar": "https://www.stanza.co/api/schedules/berkeley/MGYM.ics"
+  },
+  {
+    "team": "Women's Gymnastics",
+    "calendar": "https://www.stanza.co/api/schedules/berkeley/WGYM.ics"
+  },
+  {
+    "team": "Women's Lacrosse",
+    "calendar": "https://www.stanza.co/api/schedules/berkeley/WLAX.ics"
+  },
+  {
+    "team": "Men's Rowing",
+    "calendar": "https://www.stanza.co/api/schedules/berkeley/MROW.ics"
+  },
+  {
+    "team": "Women's Rowing",
+    "calendar": "https://www.stanza.co/api/schedules/berkeley/WROW.ics"
+  },
+  {
+    "team": "Rugby",
+    "calendar": "https://www.stanza.co/api/schedules/berkeley/RGB.ics"
+  },
+  {
+    "team": "Sailing",
+    "calendar": "https://www.stanza.co/api/schedules/berkeley/SAI.ics"
+  },
+  {
+    "team": "Men's Soccer",
+    "calendar": "https://www.stanza.co/api/schedules/berkeley/MSOC.ics"
+  },
+  {
+    "team": "Women's Soccer",
+    "calendar": "https://www.stanza.co/api/schedules/berkeley/WSOC.ics"
+  },
+  {
+    "team": "Softball",
+    "calendar": "https://www.stanza.co/api/schedules/berkeley/SB.ics"
+  },
+  {
+    "team": "Men's Swimming & Diving",
+    "calendar": "https://www.stanza.co/api/schedules/berkeley/MS.ics"
+  },
+  {
+    "team": "Women's Swimming & Diving",
+    "calendar": "https://www.stanza.co/api/schedules/berkeley/WS.ics"
+  },
+  {
+    "team": "Men's Tennis",
+    "calendar": "https://www.stanza.co/api/schedules/berkeley/MTEN.ics"
+  },
+  {
+    "team": "Women's Tennis",
+    "calendar": "https://www.stanza.co/api/schedules/berkeley/WTEN.ics"
+  },
+  {
+    "team": "Track & Field",
+    "calendar": "https://www.stanza.co/api/schedules/berkeley/T&amp;F.ics"
+  },
+  {
+    "team": "Women's Volleyball",
+    "calendar": "https://www.stanza.co/api/schedules/berkeley/WVB.ics"
+  },
+  {
+    "team": "Men's Water Polo",
+    "calendar": "https://www.stanza.co/api/schedules/berkeley/MWP.ics"
+  },
+  {
+    "team": "Women's Water Polo",
+    "calendar": "https://www.stanza.co/api/schedules/berkeley/WWP.ics"
+  }
+]

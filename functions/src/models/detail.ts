@@ -4,13 +4,13 @@ export class DetailModel {
   cardKey: string;
   params: any;
   detailRef: string;
-  data: any;
+  node: any;
 
-  constructor(cardKey: string, params: any, detailRef: string, data: any) {
+  constructor(cardKey: string, params: any, detailRef: string, node: any) {
     this.cardKey = cardKey;
     this.params = params;
     this.detailRef = detailRef;
-    this.data = data;
+    this.node = node;
   }
 
   documentId = (): string => {
