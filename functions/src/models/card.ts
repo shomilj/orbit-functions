@@ -11,6 +11,7 @@ export enum CardCategory {
   Safety = "Safety",
   Navigation = "Navigation",
   Events = "Events",
+  News = "News",
 }
 
 export class CardModel {

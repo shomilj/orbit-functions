@@ -1,7 +1,8 @@
 // import * as Countdown from "../src/features/countdown";
 // import * as GettingAround from "../src/features/gettingaround";
 // import * as CityCovid from "../src/features/citycovid";
-import * as UpcomingGames from "../src/features/upcominggames/upcominggames";
+// import * as UpcomingGames from "../src/features/upcominggames/upcominggames";
+import * as Reddit from "../src/features/reddit";
 
 describe("", () => {
   // the tests container
@@ -18,18 +19,27 @@ describe("", () => {
     console.log("Write Detail:", JSON.stringify(detail));
   };
 
-  it("upcominggames", () => {
-    UpcomingGames.writeCard(writeCard).then(() => {});
-    UpcomingGames.writeCell(
-      { team: "Men's Basketball" },
-      writeCell,
-      writeDetail
-    )
+  it("reddit", () => {
+    Reddit.writeCard(writeCard).then(() => {});
+    Reddit.writeCell(null, writeCell, writeDetail)
       .then(() => {})
       .catch((error) => {
         console.log(error);
       });
   });
+
+  // it("upcominggames", () => {
+  //   UpcomingGames.writeCard(writeCard).then(() => {});
+  //   UpcomingGames.writeCell(
+  //     { team: "Men's Basketball" },
+  //     writeCell,
+  //     writeDetail
+  //   )
+  //     .then(() => {})
+  //     .catch((error) => {
+  //       console.log(error);
+  //     });
+  // });
 
   // it("campusmap", () => {
   //   GettingAround.writeCard(writeCard).then(() => {});
