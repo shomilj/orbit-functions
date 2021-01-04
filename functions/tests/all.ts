@@ -24,7 +24,11 @@ describe("", () => {
       { team: "Men's Basketball" },
       writeCell,
       writeDetail
-    ).then(() => {});
+    )
+      .then(() => {})
+      .catch((error) => {
+        console.log(error);
+      });
   });
 
   // it("campusmap", () => {

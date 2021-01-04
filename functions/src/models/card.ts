@@ -1,6 +1,9 @@
 import { Param } from "./parameter";
 import * as hash from "object-hash";
 
+export const ORBIT_API_BASE =
+  "https://us-central1-orbit-000.cloudfunctions.net/orbit_api";
+
 export enum CardCategory {
   HealthFitness = "Health & Fitness",
   FoodDrink = "Food & Drink",

@@ -34,15 +34,16 @@ export const writeCell = async (
 
   const cellData = [
     TextRow(
-      "View the campus map to quickly find a building or library.",
-      FontStyle.h4
+      "Welcome to Berkeley! Here are some tools to help you find your way around campus.",
+      FontStyle.h3
     ),
     ButtonRow("Campus Map", ActionType.Detail, detailCampusMap.documentId()),
-    TextRow(
-      "Need to find a water fountain? Or a printer? View this map!",
-      FontStyle.h4
-    ),
     ButtonRow("Around Me", ActionType.Detail, detailAroundMe.documentId()),
+    ButtonRow(
+      "Dwinelle Navigator",
+      ActionType.Web,
+      "https://dkess.me/dwinelle/"
+    ),
   ];
 
   const expires = -1;

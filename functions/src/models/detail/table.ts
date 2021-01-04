@@ -1,10 +1,10 @@
-interface TableRow {
+export interface TableRow {
   actionType?: string;
   actionContent?: string;
   data: any[];
 }
 
-interface TableDetailType {
+export interface TableDetailType {
   type: string;
   data: TableRow[];
 }

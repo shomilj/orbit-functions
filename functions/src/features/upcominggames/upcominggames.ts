@@ -1,13 +1,14 @@
 // This card displays a countdown to an event of the user's choosing.
 import { CellModel, ActionType } from "../../models/cell";
 import { TextRow, FontStyle } from "../../models/rows/text";
-import { CardCategory, CardModel } from "../../models/card";
+import { CardCategory, CardModel, ORBIT_API_BASE } from "../../models/card";
 import { DetailModel } from "../../models/detail";
-import { TableDetail } from "../../models/detail/table";
+import { TableDetail, TableRow } from "../../models/detail/table";
 import { Param, ParamType } from "../../models/parameter";
+import axios from "axios";
 
-import * as ical from "node-ical";
 import moment = require("moment");
+import { ButtonRow } from "../../models/rows/button";
 
 const CARD_KEY = "upcoming-games";
 
@@ -49,6 +50,14 @@ export const writeCard = async (pushCard: any) => {
   pushCard(card);
 };
 
+interface ResponseRow {
+  name: string;
+  begin: number;
+  end: number;
+  description: string;
+  location: string;
+}
+
 export const writeCell = async (
   params: ParamsType,
   pushCell: any,
@@ -59,27 +68,20 @@ export const writeCell = async (
   var cellData = [];
 
   const row = TEAM_CALENDARS.filter((row) => row.team == params.team)[0];
-  try {
-    const events = await ical.async.fromURL(row.calendar);
-    const values = Object.values(events);
-    for (var i = 0; i < Math.min(3, values.length); i++) {
-      const event = values[i];
-      console.log(event);
-      if (event.start) {
-        const start = event.start as ical.DateWithTimeZone;
-        var gameTitle = event.summary as string;
-        gameTitle = gameTitle.replace(`(${row.team}) - ${row.team}`, "");
-        cellData.push(
-          TextRow(
-            moment(start.getDate()).format("LLLL").toUpperCase(),
-            FontStyle.header
-          ),
-          TextRow(gameTitle, FontStyle.body)
-        );
-      }
-    }
-  } catch (e) {
-    console.log("Cannot get events:", e);
+  let response = await axios.get(
+    ORBIT_API_BASE + "?source=calendar&url=" + row.calendar
+  );
+  const events: ResponseRow[] = response.data;
+  for (var i = 0; i < Math.min(3, events.length); i++) {
+    const event = events[i];
+    var gameTitle = event.name.replace(`(${row.team}) - ${row.team}`, "");
+    cellData.push(
+      TextRow(
+        moment(event.begin).format("LLLL").toUpperCase(),
+        FontStyle.header
+      ),
+      TextRow(gameTitle, FontStyle.body)
+    );
   }
 
   cellData.push(TextRow("VIEW ALL GAMES →", FontStyle.footer));
@@ -104,26 +106,33 @@ export const writeCell = async (
 
   // Then, write the child node if the cell contains a child.
 
-  detail.node = TableDetail([
-    {
-      data: [
-        TextRow("California at Oregon State (Men's Basketball)", FontStyle.h3),
-        TextRow("Saturday, 1/2/21 • 3:00 PM to 5:00 PM", FontStyle.footer),
-      ],
-    },
-    {
-      data: [
-        TextRow("California at Oregon State (Men's Basketball)", FontStyle.h3),
-        TextRow("Saturday, 1/2/21 • 3:00 PM to 5:00 PM", FontStyle.footer),
-      ],
-    },
-    {
-      data: [
-        TextRow("California at Oregon State (Men's Basketball)", FontStyle.h3),
-        TextRow("Saturday, 1/2/21 • 3:00 PM to 5:00 PM", FontStyle.footer),
-      ],
-    },
-  ]);
+  const node: TableRow[] = [];
 
+  const titleRow = [
+    TextRow(
+      "Here's a list of upcoming events for " + row.team + ". Go Bears!",
+      FontStyle.h2
+    ),
+    ButtonRow("Subscribe to Calendar", ActionType.Web, row.calendar),
+    ButtonRow("Cal Athletics Homepage", ActionType.Web, "https://calbears.com"),
+  ];
+  node.push({ data: titleRow });
+
+  events.forEach((event) => {
+    const data: any = [];
+    var gameTitle = event.name.replace(`(${row.team}) - ${row.team}`, "");
+    data.push(
+      TextRow(
+        moment(event.begin).format("LLLL").toUpperCase(),
+        FontStyle.h5
+      ),
+      TextRow(gameTitle, FontStyle.body)
+    );
+    node.push({
+      data: data,
+    });
+  });
+
+  detail.node = TableDetail(node);
   pushDetail(detail);
 };
