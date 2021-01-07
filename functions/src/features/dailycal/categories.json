@@ -1,0 +1,50 @@
+[
+  {
+    "category": "Top",
+    "url": "https://www.dailycal.org/feed/"
+  },
+  {
+    "category": "News",
+    "url": "https://www.dailycal.org/section/news/feed/"
+  },
+  {
+    "category": "Campus News",
+    "url": "https://www.dailycal.org/section/news/campus/feed/"
+  },
+  {
+    "category": "City News",
+    "url": "https://www.dailycal.org/section/news/city/feed/"
+  },
+  {
+    "category": "County News",
+    "url": "https://www.dailycal.org/section/news/alameda-county/feed/"
+  },
+  {
+    "category": "UC News",
+    "url": "https://www.dailycal.org/section/news/uc/feed/"
+  },
+  {
+    "category": "State News",
+    "url": "https://www.dailycal.org/section/news/state/feed/"
+  },
+  {
+    "category": "National News",
+    "url": "https://www.dailycal.org/section/news/national/feed/"
+  },
+  {
+    "category": "ASUC News",
+    "url": "https://www.dailycal.org/section/news/campus/asuc/feed/"
+  },
+  {
+    "category": "Sports",
+    "url": "https://www.dailycal.org/section/sports/feed/"
+  },
+  {
+    "category": "Arts",
+    "url": "https://www.dailycal.org/section/arts/feed/"
+  },
+  {
+    "category": "Opinion",
+    "url": "https://www.dailycal.org/section/opinion/feed/"
+  }
+]

@@ -3,6 +3,7 @@ import * as GettingAround from "./gettingaround";
 import * as CityCovid from "./citycovid";
 import * as UpcomingGames from "./upcominggames/upcominggames";
 import * as Reddit from "./reddit";
+import * as DailyCal from "./dailycal/dailycal";
 
 import * as Firestore from "../firestore/index";
 import { CardModel } from "../models/card";
@@ -13,9 +14,20 @@ export const writeAll = async () => {
   await CityCovid.writeCard((card: CardModel) => Firestore.writeCard(card));
   await UpcomingGames.writeCard((card: CardModel) => Firestore.writeCard(card));
   await Reddit.writeCard((card: CardModel) => Firestore.writeCard(card));
+  await DailyCal.writeCard((card: CardModel) => Firestore.writeCard(card));
 };
 
 export const testWriteCells = async () => {
+  await DailyCal.writeCell(
+    { category: "Top" },
+    Firestore.writeCell,
+    Firestore.writeDetail
+  )
+    .then(() => {})
+    .catch((error) => {
+      console.log(error);
+    });
+
   await CityCovid.writeCell(null, Firestore.writeCell, (detail: any) =>
     console.log(detail)
   )
