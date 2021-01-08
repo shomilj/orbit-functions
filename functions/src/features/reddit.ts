@@ -15,7 +15,7 @@ export const writeCard = async (pushCard: any) => {
     CARD_KEY,
     "Trending on r/Berkeley",
     "View what's trending on r/Berkeley.",
-    "news",
+    "trending-up-outline",
     CardCategory.News
   );
   pushCard(card);
@@ -39,11 +39,11 @@ export const writeCell = async (
 ) => {
   // Write the cell structure for this cell to Firestore.
 
-  var cellData = [];
+  let cellData = [];
   let response = await axios.get(ORBIT_API_BASE + "?source=reddit");
   let posts: RedditData[] = response.data;
 
-  for (var i = 0; i < Math.min(3, posts.length); i++) {
+  for (let i = 0; i < Math.min(3, posts.length); i++) {
     const post = posts[i];
     cellData.push(
       TextRow("Posted by u/" + post.author, FontStyle.h5),

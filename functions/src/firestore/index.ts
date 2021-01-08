@@ -4,15 +4,15 @@ import { CardModel } from "../models/card";
 import { CellModel } from "../models/cell";
 import { DetailModel } from "../models/detail";
 
-export const addCellToUser = (userId: string, cellId: string) => {
-  admin
+export const addCellToUser = async (userId: string, cellId: string) => {
+  await admin
     .firestore()
     .collection("users")
     .doc(userId)
     .set(
       {
         cells: {
-          [cellId]: true,
+          [cellId]: 0,
         },
       },
       { merge: true }

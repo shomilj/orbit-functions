@@ -43,8 +43,8 @@ export const writeCard = async (pushCard: any) => {
     CARD_KEY,
     "Cal Athletics",
     "View upcoming games for your favorite Cal sports teams!",
-    "map",
-    CardCategory.Navigation,
+    "american-football-outline",
+    CardCategory.Sports,
     params
   );
   pushCard(card);
@@ -65,16 +65,16 @@ export const writeCell = async (
 ) => {
   // Write the cell structure for this cell to Firestore.
 
-  var cellData = [];
+  let cellData = [];
 
   const row = TEAM_CALENDARS.filter((row) => row.team == params.team)[0];
   let response = await axios.get(
     ORBIT_API_BASE + "?source=calendar&url=" + row.calendar
   );
   const events: ResponseRow[] = response.data;
-  for (var i = 0; i < Math.min(3, events.length); i++) {
+  for (let i = 0; i < Math.min(3, events.length); i++) {
     const event = events[i];
-    var gameTitle = event.name.replace(`(${row.team}) - ${row.team}`, "");
+    let gameTitle = event.name.replace(`(${row.team}) - ${row.team}`, "");
     cellData.push(
       TextRow(
         moment(event.begin).format("LLLL").toUpperCase(),
@@ -120,7 +120,7 @@ export const writeCell = async (
 
   events.forEach((event) => {
     const data: any = [];
-    var gameTitle = event.name.replace(`(${row.team}) - ${row.team}`, "");
+    let gameTitle = event.name.replace(`(${row.team}) - ${row.team}`, "");
     data.push(
       TextRow(moment(event.begin).format("LLLL").toUpperCase(), FontStyle.h5),
       TextRow(gameTitle, FontStyle.body)

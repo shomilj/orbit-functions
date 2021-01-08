@@ -39,7 +39,7 @@ export const writeCard = async (pushCard: any) => {
     CARD_KEY,
     "The Daily Cal",
     "View recently published articles by the Daily Cal.",
-    "news",
+    "newspaper-outline",
     CardCategory.News,
     await getParams()
   );
@@ -73,7 +73,7 @@ export const writeCell = async (
   const selectedCategory = CATEGORIES.filter(
     (v) => v.category == params.category
   )[0];
-  var cellData = [];
+  let cellData = [];
   const requestURL =
     ORBIT_API_BASE + "?source=dailycal&url=" + selectedCategory.url;
   let apiResponse = await axios.get(requestURL);

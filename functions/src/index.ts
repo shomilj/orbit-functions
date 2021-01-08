@@ -22,19 +22,30 @@ export const addCell = functions.https.onRequest((request, response) => {
   console.log(userId, cardKey, params);
   const cellId = CellIDGen(cardKey, params);
   const db = admin.firestore();
+
   db.collection("cells")
     .doc(cellId)
     .get()
     .then((doc) => {
       if (doc.exists) {
-        addCellToUser(cellId, userId);
-        response.json({ success: true });
+        addCellToUser(userId, cellId)
+          .then(() => {
+            response.json({ success: true });
+          })
+          .catch((error) => {
+            console.log("Error in addCellToUser:", error);
+          });
       } else {
         Features.writeSingle(cardKey, params)
           .then(() => {
-            console.log("New cell created by user initiation:", cellId);
-            addCellToUser(cellId, userId);
-            response.json({ success: true });
+            console.log("New cell created by user initiation:", userId);
+            addCellToUser(userId, cellId)
+              .then(() => {
+                response.json({ success: true });
+              })
+              .catch((error) => {
+                console.log("Error in addCellToUser:", error);
+              });
           })
           .catch((error) => {
             console.log("Features.writeSingle failed:", error);
@@ -58,12 +69,12 @@ export const writeAll = functions.https.onRequest((request, response) => {
     });
 });
 
-export const testWriteCells = functions.https.onRequest((request, response) => {
-  Features.testWriteCells()
-    .then(() => {
-      response.json({ success: true });
-    })
-    .catch((error) => {
-      response.json({ error: error });
-    });
-});
+// export const testWriteCells = functions.https.onRequest((request, response) => {
+//   Features.testWriteCells()
+//     .then(() => {
+//       response.json({ success: true });
+//     })
+//     .catch((error) => {
+//       response.json({ error: error });
+//     });
+// });
