@@ -9,12 +9,18 @@ interface MapLocation {
 
 interface MapDetailType {
   type: string;
-  data: MapLocation[];
+  data: {
+    locations: MapLocation[],
+    region: any
+  };
 }
 
-export const MapDetail = (locations: MapLocation[]): MapDetailType => {
+export const MapDetail = (locations: MapLocation[], region: any): MapDetailType => {
   return {
     type: "MAP",
-    data: locations,
+    data: {
+      locations: locations,
+      region: region
+    },
   };
 };
