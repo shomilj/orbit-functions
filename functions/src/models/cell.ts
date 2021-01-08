@@ -8,6 +8,7 @@ export enum ActionType {
 export enum RowType {
   Text = "TEXT",
   Button = "BUTTON",
+  Date = "DATE",
 }
 
 export function CellIDGen(cardKey: string, params?: any) {

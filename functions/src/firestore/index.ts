@@ -4,7 +4,7 @@ import { CardModel } from "../models/card";
 import { CellModel } from "../models/cell";
 import { DetailModel } from "../models/detail";
 
-export const addCellToUser = async (userId: string, cellId: string) => {
+export const writeCellToUser = async (userId: string, cellId: string) => {
   await admin
     .firestore()
     .collection("users")

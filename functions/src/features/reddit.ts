@@ -1,10 +1,10 @@
 // This card displays a countdown to an event of the user's choosing.
 import axios from "axios";
-import moment = require("moment");
 import { CardModel, CardCategory, ORBIT_API_BASE } from "../models/card";
 import { ActionType, CellModel } from "../models/cell";
 import { DetailModel } from "../models/detail";
 import { TableRow, TableDetail } from "../models/detail/table";
+import { DateFormat, DateRow } from "../models/rows/date";
 import { TextRow, FontStyle } from "../models/rows/text";
 
 export const CARD_KEY = "r-slash-berkeley";
@@ -46,7 +46,12 @@ export const writeCell = async (
   for (let i = 0; i < Math.min(3, posts.length); i++) {
     const post = posts[i];
     cellData.push(
-      TextRow("Posted by u/" + post.author, FontStyle.h5),
+      DateRow(
+        post.created,
+        FontStyle.h5,
+        DateFormat.relative,
+        "u/" + post.author + " • "
+      ),
       TextRow(post.title, FontStyle.body)
     );
   }
@@ -88,10 +93,7 @@ export const writeCell = async (
   posts.forEach((post) => {
     const data: any = [];
     data.push(
-      TextRow(
-        moment(post.created).format("LLLL").toUpperCase(),
-        FontStyle.header
-      ),
+      DateRow(post.created, FontStyle.header, DateFormat.relative),
       TextRow(post.title, FontStyle.h2),
       TextRow(post.text, FontStyle.body),
       TextRow(

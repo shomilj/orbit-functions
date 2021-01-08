@@ -5,8 +5,11 @@ import * as UpcomingGames from "./upcominggames/upcominggames";
 import * as Reddit from "./reddit";
 import * as DailyCal from "./dailycal/dailycal";
 
+import * as admin from "firebase-admin";
+
 import * as Firestore from "../firestore/index";
 import { CardModel } from "../models/card";
+import { CellIDGen, CellModel } from "../models/cell";
 
 const FeatureMap = {
   [Countdown.CARD_KEY]: Countdown,
@@ -17,60 +20,43 @@ const FeatureMap = {
   [DailyCal.CARD_KEY]: DailyCal,
 };
 
-export const writeAll = async () => {
+export const addCellToUser = async (
+  userId: string,
+  cardKey: string,
+  params?: any
+) => {
+  const cellId = CellIDGen(cardKey, params);
+  const db = admin.firestore();
+  const doc = await db.collection("cells").doc(cellId).get();
+  if (doc.exists) {
+    await Firestore.writeCellToUser(userId, cellId);
+  } else {
+    await updateSingleCell(cardKey, params);
+    await Firestore.writeCellToUser(userId, cellId);
+  }
+};
+
+export const updateAllCards = async () => {
   for (const cardKey in FeatureMap) {
     const CardClass = (FeatureMap as any)[cardKey];
     await CardClass.writeCard((card: CardModel) => Firestore.writeCard(card));
   }
 };
 
-export const writeSingle = async (cardKey: string, params?: string) => {
-  const CardClass = (FeatureMap as any)[cardKey];
-  await CardClass.writeCell(params, Firestore.writeCell, Firestore.writeDetail);
+export const updateAllCells = async () => {
+  const db = admin.firestore();
+  let snapshot = await db.collection("cells").get();
+  if (snapshot.empty) {
+    throw Error("Nothing to update.");
+  }
+  for (let doc of snapshot.docs) {
+    const data = doc.data() as CellModel;
+    await updateSingleCell(data.cardKey, data.params);
+  }
 };
 
-export const testWriteCells = async () => {
-  await DailyCal.writeCell(
-    { category: "Top" },
-    Firestore.writeCell,
-    Firestore.writeDetail
-  )
-    .then(() => {})
-    .catch((error) => {
-      console.log(error);
-    });
-
-  await CityCovid.writeCell(null, Firestore.writeCell, (detail: any) =>
-    console.log(detail)
-  )
-    .then(() => {})
-    .catch((error) => {
-      console.log(error);
-    });
-
-  await GettingAround.writeCell(
-    null,
-    Firestore.writeCell,
-    Firestore.writeDetail
-  )
-    .then(() => {})
-    .catch((error) => {
-      console.log(error);
-    });
-
-  await UpcomingGames.writeCell(
-    { team: "Men's Basketball" },
-    Firestore.writeCell,
-    Firestore.writeDetail
-  )
-    .then(() => {})
-    .catch((error) => {
-      console.log(error);
-    });
-
-  await Reddit.writeCell(null, Firestore.writeCell, Firestore.writeDetail)
-    .then(() => {})
-    .catch((error) => {
-      console.log(error);
-    });
+export const updateSingleCell = async (cardKey: string, params?: string) => {
+  console.log("updateSingleCell called with cardKey:", cardKey);
+  const CardClass = (FeatureMap as any)[cardKey];
+  await CardClass.writeCell(params, Firestore.writeCell, Firestore.writeDetail);
 };

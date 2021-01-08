@@ -1,11 +1,11 @@
 // This card displays a countdown to an event of the user's choosing.
 import axios from "axios";
-import moment = require("moment");
 import { CardModel, CardCategory, ORBIT_API_BASE } from "../../models/card";
 import { ActionType, CellModel } from "../../models/cell";
 import { DetailModel } from "../../models/detail";
 import { TableRow, TableDetail } from "../../models/detail/table";
 import { Param, ParamType } from "../../models/parameter";
+import { DateFormat, DateRow } from "../../models/rows/date";
 import { TextRow, FontStyle } from "../../models/rows/text";
 
 export const CARD_KEY = "dailycal";
@@ -112,10 +112,7 @@ export const writeCell = async (
   articles.forEach((article) => {
     const data: any = [];
     data.push(
-      TextRow(
-        moment(article.date).format("LLLL").toUpperCase(),
-        FontStyle.header
-      ),
+      DateRow(article.date, FontStyle.header, DateFormat.relative),
       TextRow(article.author, FontStyle.h5),
       TextRow(article.title, FontStyle.h2),
       TextRow(article.summary, FontStyle.body),

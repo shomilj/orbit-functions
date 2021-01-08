@@ -7,8 +7,8 @@ import { TableDetail, TableRow } from "../../models/detail/table";
 import { Param, ParamType } from "../../models/parameter";
 import axios from "axios";
 
-import moment = require("moment");
 import { ButtonRow } from "../../models/rows/button";
+import { DateFormat, DateRow } from "../../models/rows/date";
 
 export const CARD_KEY = "upcoming-games";
 
@@ -76,10 +76,7 @@ export const writeCell = async (
     const event = events[i];
     let gameTitle = event.name.replace(`(${row.team}) - ${row.team}`, "");
     cellData.push(
-      TextRow(
-        moment(event.begin).format("LLLL").toUpperCase(),
-        FontStyle.header
-      ),
+      DateRow(event.begin, FontStyle.header, DateFormat.f),
       TextRow(gameTitle, FontStyle.body)
     );
   }
@@ -122,7 +119,7 @@ export const writeCell = async (
     const data: any = [];
     let gameTitle = event.name.replace(`(${row.team}) - ${row.team}`, "");
     data.push(
-      TextRow(moment(event.begin).format("LLLL").toUpperCase(), FontStyle.h5),
+      DateRow(event.begin, FontStyle.h5, DateFormat.ff),
       TextRow(gameTitle, FontStyle.body)
     );
     node.push({

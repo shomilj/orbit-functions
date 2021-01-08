@@ -6,6 +6,7 @@ import { CardCategory, CardModel } from "../models/card";
 import * as moment from "moment";
 import axios from "axios";
 import { ButtonRow } from "../models/rows/button";
+import { DateFormat, DateRow } from "../models/rows/date";
 
 export const CARD_KEY = "city-covid";
 
@@ -34,8 +35,6 @@ export const writeCell = async (
   );
   const data = result.data;
   const recent = data[data.length - 1];
-  const reportedDate =
-    "Last Updated: " + moment(recent.date).format("MM/DD/YYYY");
   // const newCases = recent.bklhj_newcases + " New Cases";
   const totalCases = recent.bklhj_cumulcases;
   const header = "City of Berkeley COVID-19 Data";
@@ -50,7 +49,12 @@ export const writeCell = async (
         "There are " + totalCases + " positive cases in the City of Berkeley.",
         FontStyle.h2
       ),
-      TextRow(reportedDate, FontStyle.footer),
+      DateRow(
+        recent.date,
+        FontStyle.footer,
+        DateFormat.relative,
+        "Last Updated "
+      ),
       ButtonRow(
         "Book a COVID Test",
         ActionType.Web,
