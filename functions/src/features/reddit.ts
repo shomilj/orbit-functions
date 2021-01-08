@@ -7,7 +7,7 @@ import { DetailModel } from "../models/detail";
 import { TableRow, TableDetail } from "../models/detail/table";
 import { TextRow, FontStyle } from "../models/rows/text";
 
-const CARD_KEY = "r-slash-berkeley";
+export const CARD_KEY = "r-slash-berkeley";
 
 export const writeCard = async (pushCard: any) => {
   // Write the card structure for this card to Firestore.

@@ -10,12 +10,19 @@ export enum RowType {
   Button = "BUTTON",
 }
 
+export function CellIDGen(cardKey: string, params?: any) {
+  return hash({
+    cardKey: cardKey,
+    params: params,
+  });
+}
+
 export class CellModel {
   cardKey: string;
   actionType?: string;
   actionContent?: string;
+  params?: string;
   header: string;
-  params: string;
   data: any[];
   expires: number;
 
@@ -37,10 +44,7 @@ export class CellModel {
     this.actionContent = actionContent;
   }
 
-  documentId = (): string => {
-    return hash({
-      cardId: this.cardKey,
-      params: this.params,
-    });
+  documentId = () => {
+    return CellIDGen(this.cardKey, this.params);
   };
 }

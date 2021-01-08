@@ -7,7 +7,7 @@ import * as moment from "moment";
 import axios from "axios";
 import { ButtonRow } from "../models/rows/button";
 
-const CARD_KEY = "city-covid";
+export const CARD_KEY = "city-covid";
 
 export const writeCard = async (pushCard: any) => {
   // Write the card structure for this card to Firestore.

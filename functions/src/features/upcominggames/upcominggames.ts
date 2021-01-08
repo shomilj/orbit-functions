@@ -10,7 +10,7 @@ import axios from "axios";
 import moment = require("moment");
 import { ButtonRow } from "../../models/rows/button";
 
-const CARD_KEY = "upcoming-games";
+export const CARD_KEY = "upcoming-games";
 
 interface ParamsType {
   team: string;
@@ -122,10 +122,7 @@ export const writeCell = async (
     const data: any = [];
     var gameTitle = event.name.replace(`(${row.team}) - ${row.team}`, "");
     data.push(
-      TextRow(
-        moment(event.begin).format("LLLL").toUpperCase(),
-        FontStyle.h5
-      ),
+      TextRow(moment(event.begin).format("LLLL").toUpperCase(), FontStyle.h5),
       TextRow(gameTitle, FontStyle.body)
     );
     node.push({

@@ -6,7 +6,7 @@ import { DetailModel } from "../models/detail";
 import { MapDetail } from "../models/detail/map";
 import { ButtonRow } from "../models/rows/button";
 
-const CARD_KEY = "getting-around";
+export const CARD_KEY = "getting-around";
 
 const CAMPUS_REGION = {
   latitude: 37.87165863763554,

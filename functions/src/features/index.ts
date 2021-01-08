@@ -8,13 +8,25 @@ import * as DailyCal from "./dailycal/dailycal";
 import * as Firestore from "../firestore/index";
 import { CardModel } from "../models/card";
 
+const FeatureMap = {
+  [Countdown.CARD_KEY]: Countdown,
+  [GettingAround.CARD_KEY]: GettingAround,
+  [CityCovid.CARD_KEY]: CityCovid,
+  [UpcomingGames.CARD_KEY]: UpcomingGames,
+  [Reddit.CARD_KEY]: Reddit,
+  [DailyCal.CARD_KEY]: DailyCal,
+};
+
 export const writeAll = async () => {
-  await Countdown.writeCard((card: CardModel) => Firestore.writeCard(card));
-  await GettingAround.writeCard((card: CardModel) => Firestore.writeCard(card));
-  await CityCovid.writeCard((card: CardModel) => Firestore.writeCard(card));
-  await UpcomingGames.writeCard((card: CardModel) => Firestore.writeCard(card));
-  await Reddit.writeCard((card: CardModel) => Firestore.writeCard(card));
-  await DailyCal.writeCard((card: CardModel) => Firestore.writeCard(card));
+  for (const cardKey in FeatureMap) {
+    const CardClass = (FeatureMap as any)[cardKey];
+    await CardClass.writeCard((card: CardModel) => Firestore.writeCard(card));
+  }
+};
+
+export const writeSingle = async (cardKey: string, params?: string) => {
+  const CardClass = (FeatureMap as any)[cardKey];
+  await CardClass.writeCell(params, Firestore.writeCell, Firestore.writeDetail);
 };
 
 export const testWriteCells = async () => {

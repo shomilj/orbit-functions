@@ -8,7 +8,7 @@ import { TableRow, TableDetail } from "../../models/detail/table";
 import { Param, ParamType } from "../../models/parameter";
 import { TextRow, FontStyle } from "../../models/rows/text";
 
-const CARD_KEY = "dailycal";
+export const CARD_KEY = "dailycal";
 
 interface Params {
   category: string;

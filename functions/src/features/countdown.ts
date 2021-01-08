@@ -6,7 +6,7 @@ import { Param, ParamType } from "../models/parameter";
 import { CardCategory, CardModel } from "../models/card";
 import { FontStyle, TextRow } from "../models/rows/text";
 
-const CARD_KEY = "countdown";
+export const CARD_KEY = "countdown";
 
 const DATE_MAP: Record<string, string> = {
   "Dead Week": "2021-02-22",

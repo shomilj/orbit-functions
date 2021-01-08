@@ -2,8 +2,22 @@
 import * as admin from "firebase-admin";
 import { CardModel } from "../models/card";
 import { CellModel } from "../models/cell";
-admin.initializeApp();
 import { DetailModel } from "../models/detail";
+
+export const addCellToUser = (userId: string, cellId: string) => {
+  admin
+    .firestore()
+    .collection("users")
+    .doc(userId)
+    .set(
+      {
+        cells: {
+          [cellId]: true,
+        },
+      },
+      { merge: true }
+    );
+};
 
 export const writeCard = async (card: CardModel) => {
   const writeResult = await admin
