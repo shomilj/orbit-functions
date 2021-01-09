@@ -1,0 +1,3 @@
+interface UserObject {
+  cells: string[];
+}

@@ -4,19 +4,22 @@ import { CardModel } from "../models/card";
 import { CellModel } from "../models/cell";
 import { DetailModel } from "../models/detail";
 
-export const writeCellToUser = async (userId: string, cellId: string) => {
-  await admin
-    .firestore()
-    .collection("users")
-    .doc(userId)
-    .set(
+export const writeCellToUser = async (
+  userId: string,
+  cellId: string,
+  existingCells: string[]
+) => {
+  if (existingCells.includes(cellId)) {
+    return;
+  } else {
+    const newCells = [cellId, ...existingCells];
+    await admin.firestore().collection("users").doc(userId).set(
       {
-        cells: {
-          [cellId]: 0,
-        },
+        cells: newCells,
       },
       { merge: true }
     );
+  }
 };
 
 export const writeCard = async (card: CardModel) => {

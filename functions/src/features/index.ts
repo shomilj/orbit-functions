@@ -27,12 +27,19 @@ export const addCellToUser = async (
 ) => {
   const cellId = CellIDGen(cardKey, params);
   const db = admin.firestore();
+  const userData = await db.collection("users").doc(userId).get();
+  if (!userData.exists) {
+    throw new Error("Invalid user!");
+  }
+  const user = userData.data() as UserObject;
+  let existingCells = user.cells || [];
+
   const doc = await db.collection("cells").doc(cellId).get();
   if (doc.exists) {
-    await Firestore.writeCellToUser(userId, cellId);
+    await Firestore.writeCellToUser(userId, cellId, existingCells);
   } else {
     await updateSingleCell(cardKey, params);
-    await Firestore.writeCellToUser(userId, cellId);
+    await Firestore.writeCellToUser(userId, cellId, existingCells);
   }
 };
 
