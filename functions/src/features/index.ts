@@ -20,6 +20,24 @@ const FeatureMap = {
   [DailyCal.CARD_KEY]: DailyCal,
 };
 
+const DEFAULT_CELLS: string[] = [];
+
+export const updateUserProfile = async (userId: string, name: string) => {
+  const db = admin.firestore();
+  const result = await db.collection("users").doc(userId).get();
+  if (result.exists) {
+    await db
+      .collection("users")
+      .doc(userId)
+      .set({ name: name }, { merge: true });
+  } else {
+    await db
+      .collection("users")
+      .doc(userId)
+      .set({ name: name, created: new Date().getTime(), cells: DEFAULT_CELLS });
+  }
+};
+
 export const addCellToUser = async (
   userId: string,
   cardKey: string,

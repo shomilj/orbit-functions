@@ -7,6 +7,25 @@ admin.initializeApp();
 // Start writing Firebase Functions
 // https://firebase.google.com/docs/functions/typescript
 
+export const updateUserProfile = functions.https.onRequest(
+  (request, response) => {
+    const userId = request.body.userId as string;
+    const name = request.body.name as string;
+    if (!userId || !name) {
+      response.json({ error: "Missing parameters." });
+      return;
+    }
+    Features.updateUserProfile(userId, name)
+      .then(() => {
+        response.json({ success: true });
+      })
+      .catch((error) => {
+        console.log("updateUserProfile failed:", error);
+        response.json({ error: "Unknown error." });
+      });
+  }
+);
+
 export const addCellToUser = functions.https.onRequest((request, response) => {
   // First, figure out what the unique ID of the cell is.
   const userId = request.body.userId as string;
