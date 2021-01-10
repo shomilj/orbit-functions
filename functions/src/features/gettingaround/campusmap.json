@@ -1,0 +1,1685 @@
+[
+  {
+    "category": "Buildings",
+    "title": "Bowles Hall",
+    "subtitle": "None",
+    "latitude": 37.873357,
+    "longitude": -122.253168,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Barker Hall",
+    "subtitle": "None",
+    "latitude": 37.87395,
+    "longitude": -122.26549,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Berkeley Way West",
+    "subtitle": "None",
+    "latitude": 37.873592,
+    "longitude": -122.267912,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Doe Memorial Library / Library",
+    "subtitle": "None",
+    "latitude": 37.87244,
+    "longitude": -122.25956,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Bancroft Library",
+    "subtitle": "None",
+    "latitude": 37.8723,
+    "longitude": -122.2587,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Wheeler Hall",
+    "subtitle": "None",
+    "latitude": 37.87129,
+    "longitude": -122.25914,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Sproul Hall",
+    "subtitle": "None",
+    "latitude": 37.8696,
+    "longitude": -122.25878,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Chou Hall",
+    "subtitle": "None",
+    "latitude": 37.872381,
+    "longitude": -122.254107,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Koret Visitor Center / Visitor Center",
+    "subtitle": "None",
+    "latitude": 37.871044,
+    "longitude": -122.251929,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Alumni House",
+    "subtitle": "None",
+    "latitude": 37.86968,
+    "longitude": -122.26119,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "California Hall",
+    "subtitle": "None",
+    "latitude": 37.87189,
+    "longitude": -122.26038,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Campanile (Sather Tower) / Sather Tower",
+    "subtitle": "None",
+    "latitude": 37.872332,
+    "longitude": -122.257964,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Campbell Hall",
+    "subtitle": "None",
+    "latitude": 37.87298,
+    "longitude": -122.25705,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Dwinelle Hall",
+    "subtitle": "None",
+    "latitude": 37.87058,
+    "longitude": -122.26041,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Academic Innovation Studio",
+    "subtitle": "None",
+    "latitude": 37.87058,
+    "longitude": -122.26041,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Durham Studio Theater",
+    "subtitle": "None",
+    "latitude": 37.870515,
+    "longitude": -122.260722,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Eshleman Hall",
+    "subtitle": "None",
+    "latitude": 37.868761,
+    "longitude": -122.260471,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Demography",
+    "subtitle": "None",
+    "latitude": 37.870805,
+    "longitude": -122.253027,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Boalt Hall / Law School",
+    "subtitle": "None",
+    "latitude": 37.86992,
+    "longitude": -122.25341,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Valley Life Sciences Building",
+    "subtitle": "None",
+    "latitude": 37.87148,
+    "longitude": -122.26211,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Life Sciences Addition",
+    "subtitle": "None",
+    "latitude": 37.87139,
+    "longitude": -122.26325,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Moffitt Library",
+    "subtitle": "None",
+    "latitude": 37.87255,
+    "longitude": -122.26081,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Li Ka Shing Center",
+    "subtitle": "None",
+    "latitude": 37.873,
+    "longitude": -122.2654,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Wurster Hall",
+    "subtitle": "None",
+    "latitude": 37.8705,
+    "longitude": -122.25488,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Kroeber Hall",
+    "subtitle": "None",
+    "latitude": 37.86988,
+    "longitude": -122.2552,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Evans Hall",
+    "subtitle": "None",
+    "latitude": 37.87363,
+    "longitude": -122.25783,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Stanley Hall",
+    "subtitle": "None",
+    "latitude": 37.87404,
+    "longitude": -122.25609,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Recreational Sports Facility",
+    "subtitle": "None",
+    "latitude": 37.868652,
+    "longitude": -122.262897,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Spieker Aquatics Complex",
+    "subtitle": "None",
+    "latitude": 37.868809,
+    "longitude": -122.262122,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Haas Pavilion",
+    "subtitle": "None",
+    "latitude": 37.8694,
+    "longitude": -122.26222,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Tolman Hall",
+    "subtitle": "None",
+    "latitude": 37.87412507,
+    "longitude": -122.2639221,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Koshland Hall",
+    "subtitle": "None",
+    "latitude": 37.87394,
+    "longitude": -122.26487,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Morgan Hall",
+    "subtitle": "None",
+    "latitude": 37.873164,
+    "longitude": -122.264198,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Genetics and Plant Biology",
+    "subtitle": "None",
+    "latitude": 37.873513,
+    "longitude": -122.264751,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Mulford Hall",
+    "subtitle": "None",
+    "latitude": 37.87264,
+    "longitude": -122.26449,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Hilgard Hall",
+    "subtitle": "None",
+    "latitude": 37.873164,
+    "longitude": -122.263405,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Henry H. Wheeler Brain Imaging Center",
+    "subtitle": "None",
+    "latitude": 37.87374397,
+    "longitude": -122.2629833,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Giannini Hall",
+    "subtitle": "None",
+    "latitude": 37.87357,
+    "longitude": -122.26234,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Wellman Hall",
+    "subtitle": "None",
+    "latitude": 37.872982,
+    "longitude": -122.262729,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "University House",
+    "subtitle": "None",
+    "latitude": 37.874536,
+    "longitude": -122.262077,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Haviland Hall",
+    "subtitle": "None",
+    "latitude": 37.87374,
+    "longitude": -122.26105,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Starr East Asian Library / East Asian Library",
+    "subtitle": "None",
+    "latitude": 37.8735,
+    "longitude": -122.26034,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "North Gate Hall",
+    "subtitle": "None",
+    "latitude": 37.874974,
+    "longitude": -122.259826,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Blum Hall",
+    "subtitle": "None",
+    "latitude": 37.8748,
+    "longitude": -122.25914,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "McCone Hall",
+    "subtitle": "None",
+    "latitude": 37.873996,
+    "longitude": -122.25966,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Hesse Hall",
+    "subtitle": "None",
+    "latitude": 37.874167,
+    "longitude": -122.259247,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "O'Brien Hall",
+    "subtitle": "None",
+    "latitude": 37.874483,
+    "longitude": -122.259094,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "McLaughlin Hall",
+    "subtitle": "None",
+    "latitude": 37.873829,
+    "longitude": -122.259051,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Sutardja Dai Hall / CITRIS",
+    "subtitle": "None",
+    "latitude": 37.874822,
+    "longitude": -122.258389,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Davis Hall",
+    "subtitle": "None",
+    "latitude": 37.87452,
+    "longitude": -122.25829,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Bechtel Engineering Center",
+    "subtitle": "None",
+    "latitude": 37.87425,
+    "longitude": -122.25807,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Cory Hall",
+    "subtitle": "None",
+    "latitude": 37.87505,
+    "longitude": -122.25752,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Hearst Greek Theatre / Greek Theatre",
+    "subtitle": "None",
+    "latitude": 37.87355,
+    "longitude": -122.25432,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Hearst Memorial Mining Building",
+    "subtitle": "None",
+    "latitude": 37.87446,
+    "longitude": -122.25727,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Donner Laboratory",
+    "subtitle": "None",
+    "latitude": 37.87463,
+    "longitude": -122.25649,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Foothill Residence Halls",
+    "subtitle": "None",
+    "latitude": 37.875429,
+    "longitude": -122.255763,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Le Conte Hall",
+    "subtitle": "None",
+    "latitude": 37.87249,
+    "longitude": -122.25688,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Birge Hall",
+    "subtitle": "None",
+    "latitude": 37.87219,
+    "longitude": -122.25724,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Tan Hall",
+    "subtitle": "None",
+    "latitude": 37.8731,
+    "longitude": -122.25642,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Gilman Hall",
+    "subtitle": "None",
+    "latitude": 37.87265,
+    "longitude": -122.25629,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Giauque Hall",
+    "subtitle": "None",
+    "latitude": 37.872446,
+    "longitude": -122.25587,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Hildebrand Hall",
+    "subtitle": "None",
+    "latitude": 37.872895,
+    "longitude": -122.255532,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Lewis Hall",
+    "subtitle": "None",
+    "latitude": 37.873009,
+    "longitude": -122.254878,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Latimer Hall",
+    "subtitle": "None",
+    "latitude": 37.873215,
+    "longitude": -122.255835,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Pimentel Hall",
+    "subtitle": "None",
+    "latitude": 37.87341,
+    "longitude": -122.25602,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Dwinelle Annex",
+    "subtitle": "None",
+    "latitude": 37.87035,
+    "longitude": -122.26123,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Durant Hall",
+    "subtitle": "None",
+    "latitude": 37.87126,
+    "longitude": -122.26013,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Cesar E. Chavez Student Center",
+    "subtitle": "None",
+    "latitude": 37.8698,
+    "longitude": -122.26015,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Zellerbach Hall",
+    "subtitle": "None",
+    "latitude": 37.869048,
+    "longitude": -122.261226,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Martin Luther King, Jr. Student Union / Student Union",
+    "subtitle": "None",
+    "latitude": 37.869137,
+    "longitude": -122.259614,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Bancroft Dance Studio (2401 Bancroft Way) / 2401 Bancroft Way",
+    "subtitle": "None",
+    "latitude": 37.868662,
+    "longitude": -122.261202,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Architects & Engineers (A&E)",
+    "subtitle": "None",
+    "latitude": 37.870162,
+    "longitude": -122.258756,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Old Art Gallery",
+    "subtitle": "None",
+    "latitude": 37.87059,
+    "longitude": -122.25861,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Anthony Hall",
+    "subtitle": "None",
+    "latitude": 37.87069,
+    "longitude": -122.25819,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Moses Hall",
+    "subtitle": "None",
+    "latitude": 37.87099,
+    "longitude": -122.25799,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Barrows Hall",
+    "subtitle": "None",
+    "latitude": 37.87006,
+    "longitude": -122.25791,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Hearst Field Annex",
+    "subtitle": "None",
+    "latitude": 37.86947,
+    "longitude": -122.25817,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "South Hall",
+    "subtitle": "None",
+    "latitude": 37.87133,
+    "longitude": -122.25851,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Hargrove Music Library",
+    "subtitle": "None",
+    "latitude": 37.87044,
+    "longitude": -122.2561,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Calvin Laboratory / Melvin Calvin Laboratory",
+    "subtitle": "None",
+    "latitude": 37.8709,
+    "longitude": -122.25393,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Simon Hall",
+    "subtitle": "None",
+    "latitude": 37.86985,
+    "longitude": -122.25266,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Hearst Memorial Gymnasium",
+    "subtitle": "None",
+    "latitude": 37.86956,
+    "longitude": -122.25687,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Bancroft Parking Structure",
+    "subtitle": "None",
+    "latitude": 37.869607,
+    "longitude": -122.25582,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "International House",
+    "subtitle": "None",
+    "latitude": 37.86975,
+    "longitude": -122.25145,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "California Memorial Stadium",
+    "subtitle": "None",
+    "latitude": 37.87132,
+    "longitude": -122.2506,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Simpson Center for Student-Athlete High Performance",
+    "subtitle": "None",
+    "latitude": 37.87143,
+    "longitude": -122.2522,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Lawrence Berkeley National Laboratory",
+    "subtitle": "None",
+    "latitude": 37.87614,
+    "longitude": -122.25082,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Stephens Hall",
+    "subtitle": "None",
+    "latitude": 37.87124,
+    "longitude": -122.25761,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Morrison Hall",
+    "subtitle": "None",
+    "latitude": 37.87087,
+    "longitude": -122.25644,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Hertz Hall",
+    "subtitle": "None",
+    "latitude": 37.8711,
+    "longitude": -122.25567,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Faculty Club",
+    "subtitle": "None",
+    "latitude": 37.871783,
+    "longitude": -122.255862,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Senior Hall",
+    "subtitle": "None",
+    "latitude": 37.871946,
+    "longitude": -122.255533,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Women's Faculty Club",
+    "subtitle": "None",
+    "latitude": 37.872148,
+    "longitude": -122.25487,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Minor Hall",
+    "subtitle": "None",
+    "latitude": 37.871525,
+    "longitude": -122.254711,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Julia Morgan Hall",
+    "subtitle": "None",
+    "latitude": 37.87476,
+    "longitude": -122.238312,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Haas School of Business / Andersen Auditorium",
+    "subtitle": "None",
+    "latitude": 37.8716,
+    "longitude": -122.25384,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Cheit Hall",
+    "subtitle": "None",
+    "latitude": 37.87169,
+    "longitude": -122.25384,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Archaeological Research Facility / 2251 College Ave",
+    "subtitle": "None",
+    "latitude": 37.870221,
+    "longitude": -122.253821,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Ida Louise Jackson Graduate House / Jackson Graduate House",
+    "subtitle": "None",
+    "latitude": 37.86809,
+    "longitude": -122.254,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Unit 1 Resident Hall",
+    "subtitle": "None",
+    "latitude": 37.86782,
+    "longitude": -122.25512,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Woo Hon Fai Hall",
+    "subtitle": "None",
+    "latitude": 37.86871,
+    "longitude": -122.255667,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Pacific Film Archive, Berkeley Art Museum and",
+    "subtitle": "None",
+    "latitude": 37.870781,
+    "longitude": -122.266425,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Berkeley Art Museum and Pacific Film Archive",
+    "subtitle": "None",
+    "latitude": 37.870942,
+    "longitude": -122.266221,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Underhill Parking Facility & Playing Field",
+    "subtitle": "None",
+    "latitude": 37.867,
+    "longitude": -122.25492,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Residential & Student Services Building",
+    "subtitle": "None",
+    "latitude": 37.866884,
+    "longitude": -122.255849,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Unit 2 Resident Hall",
+    "subtitle": "None",
+    "latitude": 37.86609,
+    "longitude": -122.25477,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Cleary Hall",
+    "subtitle": "None",
+    "latitude": 37.866692,
+    "longitude": -122.25982,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Unit 3 Resident Hall",
+    "subtitle": "None",
+    "latitude": 37.867182,
+    "longitude": -122.260358,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Ellsworth Parking Structure",
+    "subtitle": "None",
+    "latitude": 37.865971,
+    "longitude": -122.262501,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Haste Street Child Development Center",
+    "subtitle": "None",
+    "latitude": 37.865899,
+    "longitude": -122.261513,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Tang Center / University Health Services",
+    "subtitle": "None",
+    "latitude": 37.867555,
+    "longitude": -122.26426,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Office of Public Affairs / Public Affairs, Office of",
+    "subtitle": "None",
+    "latitude": 37.86741,
+    "longitude": -122.265581,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Jones Child Study Center",
+    "subtitle": "None",
+    "latitude": 37.86572,
+    "longitude": -122.2641,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Manville Hall",
+    "subtitle": "None",
+    "latitude": 37.865639,
+    "longitude": -122.267039,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Banway Building (2111 Bancroft Way)",
+    "subtitle": "None",
+    "latitude": 37.86788,
+    "longitude": -122.26687,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Parking and Transportation",
+    "subtitle": "None",
+    "latitude": 37.87199,
+    "longitude": -122.27127,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "University Hall",
+    "subtitle": "None",
+    "latitude": 37.87189,
+    "longitude": -122.26635,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "UC Berkeley Extension",
+    "subtitle": "None",
+    "latitude": 37.87199,
+    "longitude": -122.27127,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "East Asian Studies, Institute of",
+    "subtitle": "None",
+    "latitude": 37.87199,
+    "longitude": -122.27127,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Southeast Asian Studies, Center for",
+    "subtitle": "None",
+    "latitude": 37.87199,
+    "longitude": -122.27127,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Summer Session",
+    "subtitle": "None",
+    "latitude": 37.87199,
+    "longitude": -122.27127,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Energy Biosciences Building",
+    "subtitle": "None",
+    "latitude": 37.873911,
+    "longitude": -122.266478,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Warren Hall / 2195 Hearst",
+    "subtitle": "None",
+    "latitude": 37.874307,
+    "longitude": -122.266894,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Natural Resources Laboratory",
+    "subtitle": "None",
+    "latitude": 37.874892,
+    "longitude": -122.266862,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Insectary Greenhouse",
+    "subtitle": "None",
+    "latitude": 37.874606,
+    "longitude": -122.26739,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Oxford Research Unit",
+    "subtitle": "None",
+    "latitude": 37.875366,
+    "longitude": -122.267095,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Lower Hearst Parking Structure",
+    "subtitle": "None",
+    "latitude": 37.8753,
+    "longitude": -122.26165,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Etcheverry Hall",
+    "subtitle": "None",
+    "latitude": 37.87587,
+    "longitude": -122.2593,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Soda Hall",
+    "subtitle": "None",
+    "latitude": 37.87567,
+    "longitude": -122.25871,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Goldman School / 2607 Hearst",
+    "subtitle": "None",
+    "latitude": 37.87559,
+    "longitude": -122.25804,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Upper Hearst Parking Structure",
+    "subtitle": "None",
+    "latitude": 37.87576,
+    "longitude": -122.25735,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Stern Hall",
+    "subtitle": "None",
+    "latitude": 37.87481,
+    "longitude": -122.25553,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Martinez Commons",
+    "subtitle": "None",
+    "latitude": 37.866744,
+    "longitude": -122.257665,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Anna Head Alumnae Hall",
+    "subtitle": "None",
+    "latitude": 37.86637,
+    "longitude": -122.25744,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Fox Cottage (2350 Bowditch)",
+    "subtitle": "None",
+    "latitude": 37.867561,
+    "longitude": -122.256787,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Magnes Collection of Jewish Art and Life / 2121 Allston Way",
+    "subtitle": "None",
+    "latitude": 37.8698,
+    "longitude": -122.26686,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Minor Hall Addition",
+    "subtitle": "None",
+    "latitude": 37.871354,
+    "longitude": -122.255141,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Clark Kerr Campus",
+    "subtitle": "None",
+    "latitude": 37.86442,
+    "longitude": -122.2492,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Hellman Tennis Center",
+    "subtitle": "None",
+    "latitude": 37.86995,
+    "longitude": -122.26514,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Lawrence Hall of Science",
+    "subtitle": "None",
+    "latitude": 37.87942,
+    "longitude": -122.24662,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Haas Clubhouse",
+    "subtitle": "None",
+    "latitude": 37.872505,
+    "longitude": -122.246043,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Space Sciences Laboratory",
+    "subtitle": "None",
+    "latitude": 37.88071,
+    "longitude": -122.24431,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Mathematical Sciences Research Institute (MSRI)",
+    "subtitle": "None",
+    "latitude": 37.8798,
+    "longitude": -122.24434,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "CNMAT (1750 Arch St) / 1750 Arch St",
+    "subtitle": "None",
+    "latitude": 37.876666,
+    "longitude": -122.264499,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Fall Program for Freshmen",
+    "subtitle": "None",
+    "latitude": 37.8645694,
+    "longitude": -122.2562747,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Investigative Reporting Program",
+    "subtitle": "None",
+    "latitude": 37.875161,
+    "longitude": -122.260488,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Graduate Theological Union",
+    "subtitle": "None",
+    "latitude": 37.875544,
+    "longitude": -122.261843,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Northern Regional Library Facility",
+    "subtitle": "None",
+    "latitude": 37.917643,
+    "longitude": -122.334985,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Earthquake Engineering Library",
+    "subtitle": "None",
+    "latitude": 37.918328,
+    "longitude": -122.332485,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Maxwell Family Field and Stadium Garage",
+    "subtitle": "None",
+    "latitude": 37.8723,
+    "longitude": -122.25272,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Jacobs Hall",
+    "subtitle": "None",
+    "latitude": 37.876039,
+    "longitude": -122.258809,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Buildings",
+    "title": "Legends Aquatic Center",
+    "subtitle": "None",
+    "latitude": 37.8671309,
+    "longitude": -122.2654439,
+    "color": "#3498db",
+    "icon": "pin"
+  },
+  {
+    "category": "Libraries",
+    "title": "Bancroft Library/University Archives",
+    "subtitle": "None",
+    "latitude": 37.8723,
+    "longitude": -122.2587,
+    "color": "#f1c40f",
+    "icon": "book"
+  },
+  {
+    "category": "Libraries",
+    "title": "Engineering Library",
+    "subtitle": "None",
+    "latitude": 37.87425,
+    "longitude": -122.25807,
+    "color": "#f1c40f",
+    "icon": "book"
+  },
+  {
+    "category": "Libraries",
+    "title": "Pacific Film Archive and Study Center",
+    "subtitle": "None",
+    "latitude": 37.86871,
+    "longitude": -122.255667,
+    "color": "#f1c40f",
+    "icon": "book"
+  },
+  {
+    "category": "Libraries",
+    "title": "Doe Memorial Library",
+    "subtitle": "None",
+    "latitude": 37.87244,
+    "longitude": -122.25956,
+    "color": "#f1c40f",
+    "icon": "book"
+  },
+  {
+    "category": "Libraries",
+    "title": "Morrison Library",
+    "subtitle": "None",
+    "latitude": 37.87244,
+    "longitude": -122.25956,
+    "color": "#f1c40f",
+    "icon": "book"
+  },
+  {
+    "category": "Libraries",
+    "title": "Starr East Asian Library",
+    "subtitle": "None",
+    "latitude": 37.87357,
+    "longitude": -122.26034,
+    "color": "#f1c40f",
+    "icon": "book"
+  },
+  {
+    "category": "Libraries",
+    "title": "Moffitt Library",
+    "subtitle": "None",
+    "latitude": 37.87255,
+    "longitude": -122.26081,
+    "color": "#f1c40f",
+    "icon": "book"
+  },
+  {
+    "category": "Libraries",
+    "title": "Hargrove Music Library",
+    "subtitle": "None",
+    "latitude": 37.87044,
+    "longitude": -122.2561,
+    "color": "#f1c40f",
+    "icon": "book"
+  },
+  {
+    "category": "Libraries",
+    "title": "Howison Philosophy Library",
+    "subtitle": "None",
+    "latitude": 37.87099,
+    "longitude": -122.25799,
+    "color": "#f1c40f",
+    "icon": "book"
+  },
+  {
+    "category": "Libraries",
+    "title": "Bioscience, Natural Resources & Public Health Library",
+    "subtitle": "None",
+    "latitude": 37.87148,
+    "longitude": -122.26211,
+    "color": "#f1c40f",
+    "icon": "book"
+  },
+  {
+    "category": "Libraries",
+    "title": "Environmental Design Library",
+    "subtitle": "None",
+    "latitude": 37.8705,
+    "longitude": -122.25488,
+    "color": "#f1c40f",
+    "icon": "book"
+  },
+  {
+    "category": "Libraries",
+    "title": "Anthropology Library",
+    "subtitle": "None",
+    "latitude": 37.86988,
+    "longitude": -122.2552,
+    "color": "#f1c40f",
+    "icon": "book"
+  },
+  {
+    "category": "Libraries",
+    "title": "Berkeley Law Library",
+    "subtitle": "None",
+    "latitude": 37.86992,
+    "longitude": -122.25341,
+    "color": "#f1c40f",
+    "icon": "book"
+  },
+  {
+    "category": "Libraries",
+    "title": "Chemistry and Chemical Engineering Library",
+    "subtitle": "None",
+    "latitude": 37.872895,
+    "longitude": -122.255532,
+    "color": "#f1c40f",
+    "icon": "book"
+  },
+  {
+    "category": "Libraries",
+    "title": "Earth Sciences and Map Library",
+    "subtitle": "None",
+    "latitude": 37.873996,
+    "longitude": -122.25966,
+    "color": "#f1c40f",
+    "icon": "book"
+  },
+  {
+    "category": "Libraries",
+    "title": "Business Library",
+    "subtitle": "None",
+    "latitude": 37.87169,
+    "longitude": -122.25384,
+    "color": "#f1c40f",
+    "icon": "book"
+  },
+  {
+    "category": "Libraries",
+    "title": "Ethnic Studies Library",
+    "subtitle": "None",
+    "latitude": 37.87124,
+    "longitude": -122.25761,
+    "color": "#f1c40f",
+    "icon": "book"
+  },
+  {
+    "category": "Libraries",
+    "title": "Optometry and Health Sciences Library",
+    "subtitle": "None",
+    "latitude": 37.871525,
+    "longitude": -122.254711,
+    "color": "#f1c40f",
+    "icon": "book"
+  },
+  {
+    "category": "Libraries",
+    "title": "Institue of Governmental Studies Library",
+    "subtitle": "None",
+    "latitude": 37.8709,
+    "longitude": -122.25799,
+    "color": "#f1c40f",
+    "icon": "book"
+  },
+  {
+    "category": "Libraries",
+    "title": "Mathematics Statistics Library",
+    "subtitle": "None",
+    "latitude": 37.87363,
+    "longitude": -122.25783,
+    "color": "#f1c40f",
+    "icon": "book"
+  },
+  {
+    "category": "Libraries",
+    "title": "Northern Regional Library",
+    "subtitle": "None",
+    "latitude": 37.917643,
+    "longitude": -122.334985,
+    "color": "#f1c40f",
+    "icon": "book"
+  },
+  {
+    "category": "Libraries",
+    "title": "Physics-Astronomy Library",
+    "subtitle": "None",
+    "latitude": 37.87249,
+    "longitude": -122.25688,
+    "color": "#f1c40f",
+    "icon": "book"
+  },
+  {
+    "category": "Libraries",
+    "title": "Social Research Library",
+    "subtitle": "None",
+    "latitude": 37.87374,
+    "longitude": -122.26105,
+    "color": "#f1c40f",
+    "icon": "book"
+  },
+  {
+    "category": "Libraries",
+    "title": "South/Southeast Asia Library",
+    "subtitle": "None",
+    "latitude": 37.87244,
+    "longitude": -122.25956,
+    "color": "#f1c40f",
+    "icon": "book"
+  },
+  {
+    "category": "Libraries",
+    "title": "Institute for Research on Labor and Employment Library",
+    "subtitle": "None",
+    "latitude": 37.867318,
+    "longitude": -122.257882,
+    "color": "#f1c40f",
+    "icon": "book"
+  },
+  {
+    "category": "Libraries",
+    "title": "Art History/Classics Library",
+    "subtitle": "None",
+    "latitude": 37.87244,
+    "longitude": -122.25956,
+    "color": "#f1c40f",
+    "icon": "book"
+  },
+  {
+    "category": "Libraries",
+    "title": "Graduate Services",
+    "subtitle": "None",
+    "latitude": 37.87244,
+    "longitude": -122.25956,
+    "color": "#f1c40f",
+    "icon": "book"
+  },
+  {
+    "category": "Libraries",
+    "title": "Newspapers & Microform Library",
+    "subtitle": "None",
+    "latitude": 37.87244,
+    "longitude": -122.25956,
+    "color": "#f1c40f",
+    "icon": "book"
+  },
+  {
+    "category": "Libraries",
+    "title": "Graduate Theological Union Library",
+    "subtitle": "None",
+    "latitude": 37.875544,
+    "longitude": -122.261843,
+    "color": "#f1c40f",
+    "icon": "book"
+  },
+  {
+    "category": "Libraries",
+    "title": "Institute of Transportation Studies Library",
+    "subtitle": "None",
+    "latitude": 37.873829,
+    "longitude": -122.259051,
+    "color": "#f1c40f",
+    "icon": "book"
+  },
+  {
+    "category": "Libraries",
+    "title": "Media Resources Center",
+    "subtitle": "None",
+    "latitude": 37.87255,
+    "longitude": -122.26081,
+    "color": "#f1c40f",
+    "icon": "book"
+  },
+  {
+    "category": "Libraries",
+    "title": "Pacific Earthquake Engineering Research (PEER) Library",
+    "subtitle": "None",
+    "latitude": 37.918328,
+    "longitude": -122.332485,
+    "color": "#f1c40f",
+    "icon": "book"
+  },
+  {
+    "category": "Libraries",
+    "title": "Career Counseling Library",
+    "subtitle": "None",
+    "latitude": 37.867879,
+    "longitude": -122.26455,
+    "color": "#f1c40f",
+    "icon": "book"
+  },
+  {
+    "category": "Libraries",
+    "title": "Visual Resources Center",
+    "subtitle": "None",
+    "latitude": 37.8705,
+    "longitude": -122.25488,
+    "color": "#f1c40f",
+    "icon": "book"
+  },
+  {
+    "category": "Libraries",
+    "title": "Data Lab",
+    "subtitle": "None",
+    "latitude": 37.87244,
+    "longitude": -122.25956,
+    "color": "#f1c40f",
+    "icon": "book"
+  }
+]
