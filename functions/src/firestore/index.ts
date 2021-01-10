@@ -23,28 +23,25 @@ export const writeCellToUser = async (
 };
 
 export const writeCard = async (card: CardModel) => {
-  const writeResult = await admin
+  await admin
     .firestore()
     .collection("cards")
     .doc(card.documentId())
     .set(JSON.parse(JSON.stringify(card)));
-  console.log("Write Result:", writeResult);
 };
 
 export const writeCell = async (cell: CellModel) => {
-  const writeResult = await admin
+  await admin
     .firestore()
     .collection("cells")
     .doc(cell.documentId())
     .set(JSON.parse(JSON.stringify(cell)));
-  console.log("Write Result:", writeResult);
 };
 
 export const writeDetail = async (detail: DetailModel) => {
-  const writeResult = await admin
+  await admin
     .firestore()
     .collection("nodes")
     .doc(detail.documentId())
     .set(JSON.parse(JSON.stringify(detail)));
-  console.log("Write Result:", writeResult);
 };

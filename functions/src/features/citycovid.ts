@@ -63,7 +63,7 @@ export const writeCell = async (
       ButtonRow(
         "COVID-19 Cases on Campus",
         ActionType.Web,
-        "https://covid.berkeley.edu/"
+        "https://calviz.berkeley.edu/t/COVIDRecoveryPublic/views/UHSCovidData/UHSDashboard?:iid=1&amp;:isGuestRedirectFromVizportal=y&amp;:embed=y&amp;:tabs=no&amp;:toolbar=no&amp;:showappBanner=false"
       ),
     ],
     expires

@@ -1,16 +1,15 @@
 import * as Countdown from "./countdown";
-import * as GettingAround from "./gettingaround";
+import * as GettingAround from "./gettingaround/gettingaround";
 import * as CityCovid from "./citycovid";
 import * as UpcomingGames from "./upcominggames/upcominggames";
 import * as Reddit from "./reddit";
 import * as DailyCal from "./dailycal/dailycal";
-
 import * as admin from "firebase-admin";
-
 import * as Firestore from "../firestore/index";
 import { CardModel } from "../models/card";
 import { CellIDGen, CellModel } from "../models/cell";
 
+// Defines the list of Feature Modules and maps card keys to features.
 const FeatureMap = {
   [Countdown.CARD_KEY]: Countdown,
   [GettingAround.CARD_KEY]: GettingAround,
@@ -20,7 +19,12 @@ const FeatureMap = {
   [DailyCal.CARD_KEY]: DailyCal,
 };
 
-const DEFAULT_CELLS: string[] = [];
+// This is the list of cells that a new user starts out with.
+const DEFAULT_CELLS: string[] = [
+  "7ff32c3c79b7f66ef65cf8c03bbb44e20ee4edd0", // City Covid
+  "acf7f298eb4cbf6dd4814fc237292c4980cec329", // Daily Cal Top
+  "8e699bf22da68223275504ee68d4513070536248",
+];
 
 export const updateUserProfile = async (userId: string, name: string) => {
   const db = admin.firestore();
@@ -47,7 +51,7 @@ export const addCellToUser = async (
   const db = admin.firestore();
   const userData = await db.collection("users").doc(userId).get();
   if (!userData.exists) {
-    throw new Error("Invalid user!");
+    throw new Error("The user object does not exist in Firestore.");
   }
   const user = userData.data() as UserObject;
   let existingCells = user.cells || [];
@@ -72,7 +76,7 @@ export const updateAllCells = async () => {
   const db = admin.firestore();
   let snapshot = await db.collection("cells").get();
   if (snapshot.empty) {
-    throw Error("Nothing to update.");
+    throw Error("No cells exist in Firestore. Nothing to update!");
   }
   for (let doc of snapshot.docs) {
     const data = doc.data() as CellModel;
@@ -81,7 +85,6 @@ export const updateAllCells = async () => {
 };
 
 export const updateSingleCell = async (cardKey: string, params?: string) => {
-  console.log("updateSingleCell called with cardKey:", cardKey);
   const CardClass = (FeatureMap as any)[cardKey];
   await CardClass.writeCell(params, Firestore.writeCell, Firestore.writeDetail);
 };
