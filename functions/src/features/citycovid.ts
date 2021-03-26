@@ -1,4 +1,4 @@
-// This card displays a countdown to an event of the user's choosing.
+// This card displays information about COVID-19.
 
 import { ActionType, CellModel } from "../models/cell";
 import { TextRow, FontStyle } from "../models/rows/text";
