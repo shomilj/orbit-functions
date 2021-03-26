@@ -58,7 +58,7 @@ export const writeCell = async (
     header,
     [
       TextRow(
-        "There are " + daysLeft + " days until " + params.event,
+        "There are " + daysLeft + " days until " + params.event + '.',
         FontStyle.h2
       ),
     ],
