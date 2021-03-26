@@ -1,4 +1,5 @@
-// This card displays a countdown to an event of the user's choosing.
+// This card displays top posts from r/berkeley.
+
 import axios from "axios";
 import { CardModel, CardCategory, ORBIT_API_BASE } from "../models/card";
 import { ActionType, CellModel } from "../models/cell";
