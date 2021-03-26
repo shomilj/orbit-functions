@@ -5,6 +5,7 @@ import * as UpcomingGames from "./upcominggames/upcominggames";
 import * as Reddit from "./reddit";
 import * as DailyCal from "./dailycal/dailycal";
 import * as DiningHall from "./dininghall";
+import * as CitizenSafety from "./citizensafety";
 import * as admin from "firebase-admin";
 import * as Firestore from "../firestore/index";
 import { CardModel } from "../models/card";
@@ -19,6 +20,7 @@ const FeatureMap = {
   [Reddit.CARD_KEY]: Reddit,
   [DailyCal.CARD_KEY]: DailyCal,
   [DiningHall.CARD_KEY]: DiningHall,
+  [CitizenSafety.CARD_KEY]: CitizenSafety,
 };
 
 // This is the list of cells that a new user starts out with.

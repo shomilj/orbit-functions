@@ -58,7 +58,6 @@ export const writeCell = async (
   pushDetail: any
 ) => {
   // Write the cell structure for this cell to Firestore.
-  const selectedHall = params.hall;
 
   let cellData = [];
   const requestURL = ORBIT_API_BASE + "?source=dining";

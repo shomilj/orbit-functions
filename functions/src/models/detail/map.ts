@@ -1,26 +1,29 @@
-interface MapLocation {
+export interface MapLocation {
   title: string;
   subtitle: string;
   latitude: number;
   longitude: number;
   icon: string;
-  color: String;
+  color: string;
 }
 
-interface MapDetailType {
+export interface MapDetailType {
   type: string;
   data: {
-    locations: MapLocation[],
-    region: any
+    locations: MapLocation[];
+    region: any;
   };
 }
 
-export const MapDetail = (locations: MapLocation[], region: any): MapDetailType => {
+export const MapDetail = (
+  locations: MapLocation[],
+  region: any
+): MapDetailType => {
   return {
     type: "MAP",
     data: {
       locations: locations,
-      region: region
+      region: region,
     },
   };
 };
