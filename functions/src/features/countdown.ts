@@ -9,8 +9,9 @@ import { FontStyle, TextRow } from "../models/rows/text";
 export const CARD_KEY = "countdown";
 
 const DATE_MAP: Record<string, string> = {
-  "Dead Week": "2021-02-22",
+  "Dead Week": "2021-05-01",
   "Summer Break": "2021-05-15",
+  "Commencement": "2021-05-15",
 };
 
 interface Params {
@@ -46,7 +47,7 @@ export const writeCell = async (
   // Write the cell structure for this cell to Firestore.
   // Then, write the child node if the cell contains a child.
   const header = "Days To " + params.event;
-  const daysLeft = moment().diff(moment(DATE_MAP[params.event]), "days");
+  const daysLeft = moment(DATE_MAP[params.event]).diff(moment(), "days");
 
   // Expires at end of day today.
   const expires = moment().endOf("day").unix();

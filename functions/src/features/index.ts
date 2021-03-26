@@ -23,7 +23,8 @@ const FeatureMap = {
 const DEFAULT_CELLS: string[] = [
   "7ff32c3c79b7f66ef65cf8c03bbb44e20ee4edd0", // City Covid
   "acf7f298eb4cbf6dd4814fc237292c4980cec329", // Daily Cal Top
-  "8e699bf22da68223275504ee68d4513070536248",
+  "8e699bf22da68223275504ee68d4513070536248", // Getting Around
+  "a25077239157a42d4924c22b912c77c3ddb4f001" // Reddit
 ];
 
 export const updateUserProfile = async (userId: string, name: string) => {
