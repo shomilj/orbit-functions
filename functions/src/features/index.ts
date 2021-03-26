@@ -4,6 +4,7 @@ import * as CityCovid from "./citycovid";
 import * as UpcomingGames from "./upcominggames/upcominggames";
 import * as Reddit from "./reddit";
 import * as DailyCal from "./dailycal/dailycal";
+import * as DiningHall from "./dininghall";
 import * as admin from "firebase-admin";
 import * as Firestore from "../firestore/index";
 import { CardModel } from "../models/card";
@@ -17,14 +18,16 @@ const FeatureMap = {
   [UpcomingGames.CARD_KEY]: UpcomingGames,
   [Reddit.CARD_KEY]: Reddit,
   [DailyCal.CARD_KEY]: DailyCal,
+  [DiningHall.CARD_KEY]: DiningHall,
 };
 
 // This is the list of cells that a new user starts out with.
 const DEFAULT_CELLS: string[] = [
   "7ff32c3c79b7f66ef65cf8c03bbb44e20ee4edd0", // City Covid
   "acf7f298eb4cbf6dd4814fc237292c4980cec329", // Daily Cal Top
+  "e285349d3c67164d777f324485133919ee5001ba", // Dining Hall
   "8e699bf22da68223275504ee68d4513070536248", // Getting Around
-  "a25077239157a42d4924c22b912c77c3ddb4f001" // Reddit
+  "a25077239157a42d4924c22b912c77c3ddb4f001", // Reddit
 ];
 
 export const updateUserProfile = async (userId: string, name: string) => {
