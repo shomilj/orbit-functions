@@ -2,11 +2,10 @@
 
 import { ActionType, CellModel } from "../models/cell";
 import { TextRow, FontStyle } from "../models/rows/text";
-import { CardCategory, CardModel } from "../models/card";
+import { CardCategory, CardModel, ORBIT_API_BASE } from "../models/card";
 import * as moment from "moment";
 import axios from "axios";
 import { ButtonRow } from "../models/rows/button";
-import { DateFormat, DateRow } from "../models/rows/date";
 
 export const CARD_KEY = "city-covid";
 
@@ -22,6 +21,11 @@ export const writeCard = async (pushCard: any) => {
   pushCard(card);
 };
 
+interface CovidRow {
+  date: string;
+  positive: number;
+}
+
 export const writeCell = async (
   params: any,
   pushCell: any,
@@ -30,43 +34,59 @@ export const writeCell = async (
   // Write the cell structure for this cell to Firestore.
   // Then, write the child node if the cell contains a child.
 
-  const result = await axios.get(
-    "https://data.cityofberkeley.info/resource/xn6j-b766.json"
-  );
-  const data = result.data;
-  const recent = data[data.length - 1];
-  // const newCases = recent.bklhj_newcases + " New Cases";
-  const totalCases = recent.bklhj_cumulcases;
-  const header = "City of Berkeley COVID-19 Data";
+  // const result = await axios.get(
+  //   "https://data.cityofberkeley.info/resource/xn6j-b766.json"
+  // );
+  // const data = result.data;
+  // const recent = data[data.length - 1];
+  // // const newCases = recent.bklhj_newcases + " New Cases";
+  // const totalCases = recent.bklhj_cumulcases;
+  const header = "Campus COVID-19 Data";
   const expires = moment().add(30, "minutes").unix();
 
-  const cell = new CellModel(
-    CARD_KEY,
-    params,
-    header,
-    [
-      TextRow(
-        "There are " + totalCases + " positive cases in the City of Berkeley.",
-        FontStyle.h2
-      ),
-      DateRow(
-        recent.date,
-        FontStyle.footer,
-        DateFormat.relative,
-        "Last Updated "
-      ),
+  const result = await axios.get(ORBIT_API_BASE + "?source=campus_covid");
+  console.log(result.data);
+  const rows: CovidRow[] = result.data;
+  const yesterdayPositive = rows[0].positive;
+
+  const view: any[] = [];
+  view.push(
+    TextRow(
+      "There were " +
+        yesterdayPositive +
+        " positive cases on campus yesterday.",
+      FontStyle.h2
+    )
+  );
+
+  view.push(
+    TextRow(
+      "LAST SEVEN DAYS",
+      FontStyle.header
+    )
+  )
+
+  rows.forEach((row) => {
+    view.push(
+      TextRow("[" + row.date + "] " + row.positive.toString() + " cases", FontStyle.body)
+    );
+  });
+
+  view.push(
+    ...[
       ButtonRow(
         "Book a COVID Test",
         ActionType.Web,
         "https://etang.berkeley.edu/"
       ),
       ButtonRow(
-        "COVID-19 Cases on Campus",
+        "View the Dashboard",
         ActionType.Web,
         "https://calviz.berkeley.edu/t/COVIDRecoveryPublic/views/UHSCovidData/UHSDashboard?:iid=1&amp;:isGuestRedirectFromVizportal=y&amp;:embed=y&amp;:tabs=no&amp;:toolbar=no&amp;:showappBanner=false"
       ),
-    ],
-    expires
+    ]
   );
+
+  const cell = new CellModel(CARD_KEY, params, header, view, expires);
   pushCell(cell);
 };
