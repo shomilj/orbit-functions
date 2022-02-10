@@ -79,7 +79,7 @@ export const writeCell = async (
 
     // Set this card to expire (a.k.a. refresh) every five minutes
     const header = `EECS Room Availability`;
-    const expires = moment().add(5, "minutes").unix();
+    const expires = moment().add(1, "minutes").unix();
 
     // Tap on card => go to list of all rooms
     const detail = new DetailModel(CARD_KEY, params, "table", null);
